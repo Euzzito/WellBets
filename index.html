@@ -4,36 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/estilo.css">
-    <title>ProjetoBolão</title>
+    <title>WellBets</title>
 </head>
 <body>
     <header>
         <p class="logo">WellBets 2026</p>
+        <img src="./src/assets/logo_br.png" alt="Logo bandeira do Brasil">
     </header>
+    
 
     <main id="Container">
-        <div ></div>
-        <h2>Próximas Partidas</h2>
-        <section class="card">
-            <div class="card-bolao">
-                <img src="" alt="bandeira brasil">
-                <img src="" alt="bandeira haiti">
+        <div class="name">
+            <h2>Próximas Partidas</h2>
+        </div>
+        <section class="cards">
+            <div class="card">
+                <img class="img" src="./src/assets/brasil.png" alt="bandeira brasil">
+                <img class="img" src="./src/assets/haiti.png" alt="bandeira haiti">
                 <article class="card-content">
                     <h2>Brasil VS Haiti</h2>
                     <h3>19/06 - 21h30</h3>
                     <div class="input">
-                        <input type="number" min="0" max="10" placeholder="Brasil" id="time1">
-                        <input type="number" min="0" max="10" placeholder="Haiti" id="time2">
+                        <input class="button" type="number" min="0" max="10" placeholder="Brasil" id="time1">
+                        <input class="button" type="number" min="0" max="10" placeholder="Haiti" id="time2">
 
                     </div>
-                    <button class="botao">Lançar palpite</button>
+                    <button class="button2">Lançar palpite</button>
 
 
                 </article>
 
             </div>
 
+            <div class="card">
+                <img class="img" src="./src/assets/holanda.png" alt="bandeira holanda">
+                <img class="img" src="./src/assets/japao.png" alt="bandeira japão">
+                <article class="card-content">
+                    <h2>Holanda VS Japão</h2>
+                    <h3>15/06 - 16h00</h3>
+                    <div class="input">
+                        <input class="button" type="number" min="0" max="10" placeholder="Holanda" id="time1">
+                        <input class="button" type="number" min="0" max="10" placeholder="Japão" id="time2">
+                    </div>
+                    <button class="button2">Lançar palpite</button>
+
+                </article>
+
+            </div>
+
         </section>
+
+        <div class="name">
+            <h2>Histórico de Palpites</h2>
+        </div>
+
     </main>
 </body>
 </html>
