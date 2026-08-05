@@ -1,14 +1,23 @@
-// DEFINE O OBJETO COM OS RESULTADOS (BANCO DE DADOS)
+//DECLARANDO AS VARIAVEIS
 const placarOficial ={
-    1:{time1:2,time2:1},
-    2:{time1:3,time2:0},
+    1:{time1:2, time2:1},
+    2:{time1:2, time2:2}
 }
-// FUNÇÃO SALVAR PALPITE
-function salvarPalpite(nomeJogo,id){
-    // CAPTURA OS ELEMENTOS DO DOM
 
-    const input1 = document.getElementById(`time1-${id}`)
-    const input2 = document.getElementById(`time2-${id}`)
-    
+//FUNÇÃO QUE SALVA O PALPITE
+
+function salvarPalpite(nomeJogo,id){
+    //CAPTURA OS ELEMENTOS DO DOM
+    ///`${}` template string - concatenação
+    let input1 = document.getElementById(`time1-${id}`)
+    let input2 = document.getElementById(`time2-${id}`)
+
     //VALIDAÇÃO DOS CAMPOS
+    if(input1.value ==="" && input2.value ===""){
+        alert("Campos vazios ou invalidos. Por favor insira corretamente")
+        return;
+
+    }
+
+ //CONVERTE OS VALORES DOS INPUTS DE STRINGS PARA INTEIRO
 }
