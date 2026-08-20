@@ -50,7 +50,9 @@ function salvarPalpite(nomeJogo, id) {
       // Adiciona na lista incluindo a classe de cor de fundo
     const lista = document.getElementById('lista-resultados');
     lista.innerHTML += `<li class="list-group-item ${corFundo}">
-        ${nomeJogo}: Seu palpite ${p1}x${p2} - <strong>${status}</strong>
+        <span>${nomeJogo}</span>
+        <span>${p1}x${p2}</span>
+        <span>${status}</span>
     </li>`;
     // Limpa os campos
     input1.value = "";
